@@ -1,7 +1,7 @@
 import axios from 'axios';
 const JSON_OUTPUT = '&output=json';
 
-const api = axios.create({
+export const api = axios.create({
   baseURL: 'https://ipwho.is/',
 });
 

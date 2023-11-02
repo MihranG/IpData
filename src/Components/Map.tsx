@@ -8,6 +8,7 @@ const MapWrapperDiv = styled.div`
   position: relative;
   z-index: 1;
 `;
+//this is for changing leaflet map default behaviour as it is not being updated after initial setting to a center
 function ChangeView({
   center,
   zoom,

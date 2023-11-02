@@ -1,8 +1,8 @@
-import InputForm from './Components/InputForm.tsx';
-import Map from './Components/Map.tsx';
-import { IpDataProvider } from './contexts/IpDataContext.tsx';
-import Header from './Components/HeaderContainer.tsx';
-import Card from './Components/Card.tsx';
+import InputForm from './InputForm.tsx';
+import Map from './Map.tsx';
+import { IpDataProvider } from '../contexts/IpDataContext.tsx';
+import Header from './HeaderContainer.tsx';
+import Card from './Card.tsx';
 import styled from 'styled-components';
 
 const ContentWrapperDiv = styled.div`
