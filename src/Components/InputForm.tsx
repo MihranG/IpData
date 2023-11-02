@@ -65,7 +65,9 @@ const InputForm: React.FC = () => {
           value={inputIP}
           onChange={handleIPChange}
         />
-        <GoButton onClick={fetchIPData}>➤</GoButton>
+        <GoButton onClick={fetchIPData} type="submit">
+          ➤
+        </GoButton>
       </InputContainer>
       <ErrorMessage>{error}</ErrorMessage>
     </>

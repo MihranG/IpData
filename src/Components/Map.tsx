@@ -1,26 +1,14 @@
 import React from 'react';
-import { MapContainer, TileLayer, Marker, Popup, useMap } from 'react-leaflet';
+import { MapContainer, TileLayer, Marker, Popup } from 'react-leaflet';
 import { useIpData } from '../hooks/UseIpData.ts';
 import { LATITUDE, LONGITUDE } from '../constants.ts';
 import styled from 'styled-components';
+import ChangeView from '../helpers/ChangeView.ts';
 
 const MapWrapperDiv = styled.div`
   position: relative;
   z-index: 1;
 `;
-//this is for changing leaflet map default behaviour as it is not being updated after initial setting to a center
-function ChangeView({
-  center,
-  zoom,
-}: {
-  center: [number, number];
-  zoom: number;
-}): null {
-  const map = useMap();
-  map.setView(center, zoom);
-  return null;
-}
-
 const Map: React.FC = () => {
   const { ipData } = useIpData();
   const { longitude, latitude } = ipData;

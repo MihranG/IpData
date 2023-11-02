@@ -46,7 +46,7 @@ const Card: React.FC = () => {
         console.error(error);
       });
   }, [setIpData]);
-
+  // todo add loading state
   return (
     <CardContainer>
       <CardSection>
