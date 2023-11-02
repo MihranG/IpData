@@ -41,6 +41,7 @@ const InputForm: React.FC = () => {
   const [error, setError] = useState('');
   const { setIpData } = useIpData();
   const handleIPChange = (e: React.ChangeEvent<HTMLInputElement>) => {
+    // todo add validation for IP address
     setError('');
     setInputIP(e.target.value);
   };
